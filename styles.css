@@ -40,7 +40,7 @@ body {
   padding: 20px 140px;
   height: 100%;
   border-radius: 290px;
-  transform: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .signup-section header,
@@ -152,4 +152,21 @@ form .btn {
   background: #303f9f;
   color: #fff;
   border: none;
+}
+
+.container.active .login-section {
+  bottom: -12%;
+  border-radius: 226px;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container.active .signup-section {
+  bottom: -88%;
+}
+
+.container.active .login-section header {
+  opacity: 1;
+}
+.container.active .signup-section header {
+  opacity: 0.6;
 }
